@@ -1,0 +1,114 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+section {
+  max-width: 900px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 4rem auto;
+  flex-direction: row;
+}
+section .card {
+  display: flex;
+  max-width: 300px;
+  min-height: 400px;
+  color: white;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+section .card:nth-child(1) {
+  border-top-left-radius: 8pt;
+  border-bottom-left-radius: 8pt;
+}
+section .card:nth-child(3) {
+  border-top-right-radius: 8pt;
+  border-bottom-right-radius: 8pt;
+}
+section .card:nth-child(1) {
+  background: #e28525;
+}
+section .card:nth-child(2) {
+  background: #016972;
+}
+section .card:nth-child(3) {
+  background: #00403f;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5rem;
+}
+.text span:nth-child(1){
+    font-size: 1.5rem;
+}
+.card:nth-child(1) .text span:nth-child(2){
+    color:#F0BA80;
+}
+.card:nth-child(1) .text  span:nth-child(3){
+    padding: 0.5rem  1rem;
+    width: max-content;
+    border-radius: 2rem;
+    background: white;
+    color: #F0BA80;
+}
+.card:nth-child(1) .text  span:nth-child(3):hover{
+    background: #F0BA80;
+    color: white;
+    cursor: pointer;
+    outline-offset: 2px;
+    outline: solid 1pt #F0BA80;
+}
+.card:nth-child(2) .text span:nth-child(2){
+    color: #2DB6BF;
+}
+
+.card:nth-child(2) .text span:nth-child(3){
+    padding: 0.5rem  1rem;
+    width: max-content;
+    border-radius: 2rem;
+    background: white;
+    color:#2DB6BF;
+}
+.card:nth-child(2) .text  span:nth-child(3):hover{
+    background: #2DB6BF;
+    color: white;
+    cursor: pointer;
+    outline-offset: 2px;
+    outline: solid 1pt #2DB6BF;
+}
+.card:nth-child(3) .text span:nth-child(2){
+    color: #86B6B6;
+}
+
+.card:nth-child(3) .text span:nth-child(3){
+    padding: 0.5rem  1rem;
+    width: max-content;
+    border-radius: 2rem;
+    background: white;
+    color:#86B6B6;
+}
+.card:nth-child(3) .text  span:nth-child(3):hover{
+    background: #86B6B6;
+    color: white;
+    cursor: pointer;
+    outline-offset: 2px;
+    outline: solid 1pt #86B6B6;
+}
