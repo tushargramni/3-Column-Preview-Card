@@ -33,14 +33,28 @@ section .card {
   margin: 0 auto;
   padding: 2rem;
 }
-section .card:nth-child(1) {
-  border-top-left-radius: 8pt;
-  border-bottom-left-radius: 8pt;
+@media screen and (min-width:920px) {
+  section .card:nth-child(1) {
+    border-top-left-radius: 8pt;
+    border-bottom-left-radius: 8pt;
+  }
+  section .card:nth-child(3) {
+    border-top-right-radius: 8pt;
+    border-bottom-right-radius: 8pt;
+  }  
 }
-section .card:nth-child(3) {
-  border-top-right-radius: 8pt;
-  border-bottom-right-radius: 8pt;
+@media screen and (max-width:919px) {
+  section .card:nth-child(1) {
+    border-top-left-radius: 8pt;
+    border-top-right-radius: 8pt;
+   
+  }
+  section .card:nth-child(3) {
+    border-bottom-left-radius: 8pt; 
+    border-bottom-right-radius: 8pt;
+  }  
 }
+
 section .card:nth-child(1) {
   background: #e28525;
 }
